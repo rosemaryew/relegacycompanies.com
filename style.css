@@ -133,7 +133,7 @@ body {
 /* VIDEO */
 .right-column {
     flex: 1;
-    min-width: 0;
+    min-width: 350px;
 }
 
 .video-wrapper iframe {

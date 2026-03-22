@@ -87,20 +87,19 @@ body {
 
 /* CTA + CONTACT GROUP */
 .cta-contact-group {
-    margin-top: 20px;
+    margin-top: 40px;          /* 👈 Increased spacing from the cards */
     display: flex;
     flex-direction: column;
-    align-items: flex-start;   /* 👈 Change from 'center' to 'flex-start' */
-    gap: 20px;
+    align-items: center;      /* Centers the group between the cards */
     width: 100%;
-    max-width: 520px;          /* Matches your service cards width */
 }
 
 /* CTA */
-cta-wrapper {
-    margin: 15px 0;
-    text-align: left;          /* 👈 Align the button to the left */
+.cta-wrapper {
     width: 100%;
+    max-width: 520px;         /* Matches cards width */
+    text-align: left;         /* 👈 Aligns button to the left side of this 520px area */
+    margin-bottom: 25px;      /* 👈 Space between button and Address */
 }
 
 .cta-button {
@@ -118,16 +117,16 @@ cta-wrapper {
 /* CONTACT */
 .contact {
     color: #e3b2a6;
-    text-align: left;          /* 👈 Align text to the left */
     width: 100%;
+    max-width: 520px;         /* 👈 Matches CTA width exactly */
+    text-align: left;         /* Ensures text stays left-aligned */
 }
 
 .contact-row {
     display: grid;
-    grid-template-columns: 80px 1fr; /* 👈 Adjusted width for labels like 'ADDRESS:' */
+    grid-template-columns: 85px 1fr; /* 👈 Uniform width for ADDRESS, EMAIL, PHONE */
     gap: 10px;
-    align-items: start;
-    margin-bottom: 10px;
+    margin-bottom: 8px;       /* Adds breathing room between rows */
 }
 
 .address {
@@ -143,8 +142,9 @@ cta-wrapper {
 }
 
 .label {
-    min-width: 120px;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .value {
@@ -172,7 +172,11 @@ cta-wrapper {
 
 /* MOBILE */
 @media (max-width: 700px) {
-
+    
+.cta-contact-group {
+        align-items: center;    /* Keeps everything centered on the screen */
+        margin-top: 30px;       /* Adds breathing room below the video/cards */
+    }
     .content-row {
         flex-direction: column;
         align-items: center;
@@ -188,9 +192,10 @@ cta-wrapper {
         text-align: center;
     }
 
-    .cta-wrapper {
-        text-align: center;
+   .cta-wrapper, .contact {
         width: 100%;
+        max-width: 100%;        /* Allows it to fill the phone width */
+        text-align: center;     /* Centers the button and the text labels */
     }
 
   .contact {
@@ -200,9 +205,21 @@ cta-wrapper {
         text-align: center;
     }
 
-     .contact-row {
-        grid-template-columns: 120px 1fr; /* same as desktop */
-        gap: 10px;
-        align-items: start;
+   .contact-row {
+        display: flex;          /* Switches from Grid to Flex for better stacking */
+        flex-direction: column; /* Stacks 'ADDRESS:' on top of the actual address */
+        align-items: center;
+        gap: 4px;
+        margin-bottom: 20px;    /* More space between Address, Email, and Phone */
+    }
+    
+    .label {
+        font-size: 12px;        /* Slightly smaller labels for mobile */
+        letter-spacing: 1px;
+    }
+
+    .value {
+        font-size: 16px;        /* Standard readable size for mobile */
+        line-height: 1.4;
     }
 }

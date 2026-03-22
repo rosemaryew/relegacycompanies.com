@@ -121,6 +121,7 @@ body {
     text-align: left;   /* 👈 IMPORTANT: restores original alignment */
     width: 100%;
     max-width: 520px;   /* 👈 same width as cards */
+    margin: 0;           /* remove any auto centering */
 }
 
 .contact-row {
@@ -193,15 +194,16 @@ body {
         width: 100%;
     }
 
-    .contact {
+  .contact {
         width: 100%;
-        max-width: 320px;
-        margin: 25px auto 0 auto;
+        max-width: 520px;   /* match the CTA button width */
+        margin: 0;          /* align flush with button */
         text-align: left;
     }
 
-    .contact-row {
-        justify-content: flex-start; /* 👈 key fix */
+     .contact-row {
+        grid-template-columns: 120px 1fr; /* same as desktop */
+        gap: 10px;
+        align-items: start;
     }
-
 }

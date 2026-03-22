@@ -87,7 +87,7 @@ body {
 
 /* CTA + CONTACT GROUP */
 .cta-contact-group {
-    margin-top: 40px;          /* 👈 Increased spacing from the cards */
+    margin-top: 50px;          /* 👈 Increased spacing from the cards */
     display: flex;
     flex-direction: column;
     align-items: center;      /* Centers the group between the cards */
@@ -99,7 +99,7 @@ body {
     width: 100%;
     max-width: 520px;         /* Matches cards width */
     text-align: left;         /* 👈 Aligns button to the left side of this 520px area */
-    margin-bottom: 25px;      /* 👈 Space between button and Address */
+    margin-bottom: 30px;      /* 👈 Space between button and Address */
 }
 
 .cta-button {
@@ -124,9 +124,9 @@ body {
 
 .contact-row {
     display: grid;
-    grid-template-columns: 85px 1fr; /* 👈 Uniform width for ADDRESS, EMAIL, PHONE */
+    grid-template-columns: 95px 1fr; /* 👈 Uniform width for ADDRESS, EMAIL, PHONE */
     gap: 10px;
-    margin-bottom: 8px;       /* Adds breathing room between rows */
+    margin-bottom: 12px;       /* Adds breathing room between rows */
 }
 
 .address {

@@ -56,7 +56,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-     align-items: flex-start;
+     align-items: center;
 }
 
 /* CARDS */
@@ -95,11 +95,14 @@ body {
 }
 
 /* CTA */
-.cta-wrapper {
+.cta-wrapper, .contact {
     width: 100%;
-    max-width: 520px;         /* Matches cards width */
-    text-align: left;         /* 👈 Aligns button to the left side of this 520px area */
-    margin-bottom: 35px;      /* 👈 Space between button and Address */
+    max-width: 520px;       /* 👈 This MUST match the .services width exactly */
+    text-align: left;       /* This aligns the button and address to the left edge of the box */
+}
+
+.cta-wrapper {
+    margin-bottom: 40px;    /* Adds the space you wanted */
 }
 
 .cta-button {
@@ -136,7 +139,7 @@ body {
 .content-row {
     display: flex;
     gap: 40px;              /* 👈 Reduced from 100px to keep things tighter */
-    align-items: flex-start; 
+    align-items: stretch; 
     justify-content: center; /* 👈 Centers the two main columns on the screen */
     width: 100%;
 }
@@ -168,6 +171,7 @@ body {
     height: 100%;              /* MATCH HEIGHT */
     border-radius: 10px;
     border: none;
+    object-fit: cover; 
 }
 
 /* MOBILE */

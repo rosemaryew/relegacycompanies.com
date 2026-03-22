@@ -52,8 +52,8 @@ body {
 /* LAYOUT */
 .content-row {
     display: flex;
-    gap: 50px;
-    align-items: flex-start;
+    gap: 120px;
+    align-items: center; /* 👈 CHANGE THIS BACK */
     justify-content: space-between;
     flex-wrap: nowrap; /* 👈 forces columns to stay side-by-side */
 }
@@ -86,7 +86,11 @@ body {
 
 /* CTA + CONTACT GROUP */
 .cta-contact-group {
-    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 👈 left align now */
+    gap: 15px;
     max-width: 420px;
 }
 
@@ -139,7 +143,7 @@ body {
 }
 
 .video-wrapper iframe {
-    width: 100%;
+    max-width: 420px;
     height: 300px;
     border-radius: 10px;
     border: none;

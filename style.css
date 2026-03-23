@@ -87,7 +87,7 @@ body {
 
 /* CTA + CONTACT GROUP */
 .cta-contact-group {
-    margin-top: 60px;        /* Spacing below the cards */
+    margin-top: 50px;        /* Spacing below the cards */
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -102,7 +102,7 @@ body {
 }
 
 .cta-wrapper {
-    margin-bottom: 45px;      /* 👈 Increased spacing between button and Address */
+    margin-bottom: 35px;      /* 👈 Increased spacing between button and Address */
 }
 
 
@@ -124,9 +124,9 @@ body {
 
 .contact-row {
     display: grid;
-    grid-template-columns: 100px 1fr; /* 👈 Uniform label width for vertical alignment */
+    grid-template-columns: 85px 1fr; /* 👈 Uniform label width for vertical alignment */
     gap: 10px;
-    margin-bottom: 15px;      /* Space between Address, Email, Phone */
+    margin-bottom: 12px;      /* Space between Address, Email, Phone */
 }
 
 .address {
